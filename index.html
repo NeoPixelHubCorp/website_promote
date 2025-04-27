@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet"
+/>
   <!-- <link href="../dist/output.css" rel="stylesheet"> -->
 
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;800&display=swap" rel="stylesheet">
@@ -25,30 +29,30 @@
     #exo {
       font-family: 'Exo 2', sans-serif;
     }
+    
   </style>
 
 </head>
 
 <body class="bg-white text-gray-800 relative overflow-x-hidden">
-  <header class="border-b border-gray-200 relative z-30">
     <nav class="bg-white fixed top-0 left-0 w-full shadow-md z-50">
       <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <!-- Logo -->
-        <img src="image/Logo.png" alt="SIGAP Logo" class="w-28 sm:w-[118px]" />
-
+        <img src="image/Logo.png" alt="SIGAP Logo" class="w-[120px] sm:w-[120px] mt-3 mb-3" />
+  
         <!-- Desktop Navigation -->
         <ul id="nav-links"
-          class="hidden sm:flex items-center space-x-10 font-semibold text-[#404040] text-base md:text-lg tracking-wide">
-          <li><a href="#beranda" class="hover:text-gray-400">Beranda</a></li>
-          <li><a href="#fitur" class="hover:text-gray-400">Fitur</a></li>
-          <li><a href="#cara_kerja" class="hover:text-gray-400">Cara Kerja</a></li>
-          <li><a href="#testimoni" class="hover:text-gray-400">Testimoni</a></li>
-          <li><a href="#faq" class="hover:text-gray-400">FAQ</a></li>
+          class="hidden sm:flex items-center space-x-8 font-semibold text-[#404040] text-[18px] md:text-[20px] tracking-wide">
+          <li><a href="#beranda" class="hover:text-sky-600 transition-colors">Beranda</a></li>
+          <li><a href="#fitur" class="hover:text-sky-600 transition-colors">Fitur</a></li>
+          <li><a href="#cara_kerja" class="hover:text-sky-600 transition-colors">Cara Kerja</a></li>
+          <li><a href="#testimoni" class="hover:text-sky-600 transition-colors">Testimoni</a></li>
+          <li><a href="#faq" class="hover:text-sky-600 transition-colors">FAQ</a></li>
         </ul>
-
+  
         <!-- Mobile Menu Button -->
-        <button id="menu-btn" type="button" aria-label="Toggle Menu" class="sm:hidden text-gray-700">
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        <button id="menu-btn" type="button" aria-label="Toggle Menu" class="sm:hidden text-gray-700 focus:outline-none">
+          <svg id="menu-icon" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
             stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="6" x2="21" y2="6" />
             <line x1="3" y1="12" x2="21" y2="12" />
@@ -56,47 +60,47 @@
           </svg>
         </button>
       </div>
-
+  
       <!-- Mobile Navigation -->
       <div id="mobile-menu"
         class="hidden sm:hidden absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-md transition-all duration-300 ease-in-out">
-        <ul class="flex flex-col space-y-3 p-4 text-gray-700 text-base font-medium">
-          <li><a href="#beranda" class="hover:text-sky-700">Beranda</a></li>
-          <li><a href="#fitur" class="hover:text-sky-700">Fitur</a></li>
-          <li><a href="#cara_kerja" class="hover:text-sky-700">Cara Kerja</a></li>
-          <li><a href="#testimoni" class="hover:text-sky-700">Testimoni</a></li>
-          <li><a href="#faq" class="hover:text-sky-700">FAQ</a></li>
+        <ul class="flex flex-col space-y-4 p-6 text-gray-700 text-lg font-semibold">
+          <li><a href="#beranda" class="hover:text-sky-700 transition-colors">Beranda</a></li>
+          <li><a href="#fitur" class="hover:text-sky-700 transition-colors">Fitur</a></li>
+          <li><a href="#cara_kerja" class="hover:text-sky-700 transition-colors">Cara Kerja</a></li>
+          <li><a href="#testimoni" class="hover:text-sky-700 transition-colors">Testimoni</a></li>
+          <li><a href="#faq" class="hover:text-sky-700 transition-colors">FAQ</a></li>
         </ul>
       </div>
     </nav>
-  </header>
 
   <!-- Section 1 -->
-  <main
-    class="pt-[150px] min-h-screen max-w-7xl mx-auto px-4 sm:px-7 py-16 flex flex-col md:flex-row items-center gap-10 md:gap-20"
-    id="beranda">
+  <main class="pt-[100px] min-h-screen max-w-7xl mx-auto px-4 sm:px-7 py-16 flex flex-col md:flex-row items-center gap-10 md:gap-20" id="beranda">
+  
+    <!-- Bagian Text -->
     <section class="flex-1 max-w-xl text-center md:text-left order-2 md:order-1">
-      <h1 id="exo" class="text-[38px] sm:text-[58px] font-extrabold text-[#1E90FF] mt-8 whitespace-nowrap font-exo">
-        Sistem Informasi
-        <br /> Gangguan Pelayanan
+      <h1 class="text-[36px] sm:text-[48px] md:text-[60px] font-extrabold text-[#1E90FF] mt-8 font-exo">
+        Sistem Informasi<br />Gangguan Pelayanan
       </h1>
-      <p
-        class="text-[#404040] font-medium tracking-[1.5px] text-[22px] sm:text-2xl my-6 sm:my-10 leading-relaxed max-w-2xl">
+      <p class="text-[#404040] font-medium text-[18px] sm:text-[22px] md:text-[26px] my-6 md:my-10 leading-relaxed">
         Platform pengaduan masyarakat berbasis digital pelayanan publik lebih cepat, mudah, dan transparan.
       </p>
-      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 sm:gap-6 pt-6">
-        <button
-          class="bg-gradient-to-tr from-[#1E90FF] via-[#00386E] to-[#1E90FF] text-white text-[20px] sm:text-[30px] font-semibold px-5 py-2 rounded-xl">
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 sm:gap-6 pt-6 w-full">
+        <button class="w-full sm:w-auto bg-gradient-to-r from-[#00386E] via-[#1678D7] to-[#1E90FF] 
+          text-white font-semibold text-lg sm:text-2xl px-6 sm:px-10 py-3 sm:py-4 rounded-xl transition-all duration-300 hover:brightness-110">
           Unduh Aplikasi
         </button>
       </div>
     </section>
+  
+    <!-- Bagian Gambar -->
     <section class="flex-1 flex justify-center md:justify-center order-1 md:order-2 mt-10 md:mt-16">
-      <img alt="Smartphone SIGAP" class="w-full sm:w-80 md:w-[28rem] lg:w-[30rem] max-w-full" src="image/iphone.png"
-        data-aos="fade-up-left" data-aos-delay="200" data-aos="fade-up" data-aos-offset="450">
+      <img alt="Smartphone SIGAP" class="w-full sm:w-80 md:w-[26rem] lg:w-[28rem] max-w-full" src="image/iphone.png"
+        data-aos="fade-up-left" data-aos-delay="200" data-aos-offset="400">
     </section>
   </main>
-
+  
+  
   <!-- section wave -->
   <div class="w-full overflow-hidden">
     <img src="image/wave.png" alt="Light blue wave shape on white background, spanning full width"
@@ -105,12 +109,12 @@
 
   <!-- section 2 -->
   <section class="bg-[#D9ECFF] max-w-full mx-auto p-6 sm:p-8" id="fitur">
-    <h1 id="exo" class="text-[#2a8af7] font-extrabold text-[56px] sm:text-[50px] mb-15 ml-11 sm:mb-10">
+    <h1 id="exo" class="text-[#2a8af7] font-extrabold text-center text-[56px] sm:text-[56px] mb-16 ml-11 sm:mb-16">
       Fitur Unggulan SIGAP
     </h1>
-    <div class="flex flex-col sm:flex-row gap-6 px-4 ml-8 mr-8">
+    <div class="flex flex-col sm:flex-row gap-6 px-4 mr-12 ml-12">
       <div
-        class="bg-[#1E90FF]/20 rounded-[40px] p-8 sm:p-10 flex flex-col items-center text-center flex-1 min-w-[280px] sm:min-w-[320px]">
+        class="bg-[#1E90FF]/20 rounded-[40px] p-8 sm:p-10 flex flex-col items-center text-center flex-1 min-w-[280px] sm:min-w-[280px]">
         <img
           alt="Illustration of a computer screen with a folder and document icons representing environmental issue reports"
           class="mb-6 mt-2.5 max-w-full" height="278" src="image/layanan3.png" width="275" />
@@ -154,143 +158,120 @@
   </div>
 
   <!-- Section 3 -->
-  <section class="max-w-7xl mx-auto mt-16 sm:mt-16 mb-20" id="cara_kerja">
+  <section class="max-w-7xl mx-12 mt-12 sm:mt-12 mb-32" id="cara_kerja">
     <h1 id="exo" class="text-[#1E90FF] font-extrabold text-[36px] sm:text-[56px] text-center mb-20 sm:mb-24">
       Bagaimana Cara Mengadu ?
     </h1>
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10">
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
       <!-- Step 1 -->
       <div class="flex flex-col items-center max-w-[220px]">
         <img alt="Step 1" class="w-[180px] h-[200px] object-contain sm:w-[200px] sm:h-[220px]" src="image/1.png" />
-        <p
-          class="mt-7 mb-6 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
+        <p class="mt-5 mb-4 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
           Daftar atau Masuk
         </p>
       </div>
-
+  
       <!-- Arrow -->
-      <div class="flex justify-center items-center bg-[#0B3B61] rounded-full w-12 h-12 hidden sm:flex">
-        <span class="text-white text-[40px] font-medium leading-none">›</span>
+      <div class="flex justify-center items-center bg-[#0B3B61] rounded-full w-10 h-10 sm:w-12 sm:h-12">
+        <span class="text-white text-[32px] sm:text-[40px] font-medium leading-none">›</span>
       </div>
-
+  
       <!-- Step 2 -->
       <div class="flex flex-col items-center max-w-[220px]">
         <img alt="Step 2" class="w-[180px] h-[200px] object-contain sm:w-[200px] sm:h-[220px]" src="image/2.png" />
-        <p class="mt-9 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
+        <p class="mt-5 mb-4 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
           Isi Formulir Pengajuan
         </p>
       </div>
-
+  
       <!-- Arrow -->
-      <div class="flex justify-center items-center bg-[#0B3B61] rounded-full w-12 h-12 hidden sm:flex">
-        <span class="text-white text-[40px] font-medium leading-none">›</span>
+      <div class="flex justify-center items-center bg-[#0B3B61] rounded-full w-10 h-10 sm:w-12 sm:h-12">
+        <span class="text-white text-[32px] sm:text-[40px] font-medium leading-none">›</span>
       </div>
-
+  
       <!-- Step 3 -->
       <div class="flex flex-col items-center max-w-[220px]">
         <img alt="Step 3" class="w-[180px] h-[200px] object-contain sm:w-[200px] sm:h-[220px]" src="image/3.png" />
-        <p class="mt-9 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
+        <p class="mt-5 mb-4 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
           Unggah Bukti Pendukung
         </p>
       </div>
-
+  
       <!-- Arrow -->
-      <div class="flex justify-center items-center bg-[#0B3B61] rounded-full w-12 h-12 hidden sm:flex">
-        <span class="text-white text-[40px] font-medium leading-none">›</span>
+      <div class="flex justify-center items-center bg-[#0B3B61] rounded-full w-10 h-10 sm:w-12 sm:h-12">
+        <span class="text-white text-[32px] sm:text-[40px] font-medium leading-none">›</span>
       </div>
-
+  
       <!-- Step 4 -->
       <div class="flex flex-col items-center max-w-[220px]">
         <img alt="Step 4" class="w-[180px] h-[200px] object-contain sm:w-[200px] sm:h-[220px]" src="image/4.png" />
-        <p class="mt-9 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
+        <p class="mt-5 mb-4 text-center text-[#0B3B61] font-bold text-[22px] sm:text-[24px] leading-[32px] font-['Inter']">
           Kirim & Pantau Pengaduan
         </p>
       </div>
     </div>
   </section>
+  
 
   <!-- section 4 -->
-  <section class="max-w-full min-h-screen flex flex-col items-center pt-10 pb-10 px-4" id="testimoni">
-    <h1 class="text-[#1E90FF] font-extrabold text-[36px] sm:text-[56px] mb-20 mt-36 text-center">
+  <section class="bg-[url('/image/bg.jpg')] bg-center max-w-full min-h-screen flex flex-col items-center pt-20 pb-10 mb-20 mt-20 px-4" id="testimoni">
+    <h1 id="exo" class="text-[#1E90FF] font-extrabold text-[36px] sm:text-[56px] mb-32 mt-15 text-center">
       SIGAP Menurut Mereka
     </h1>
-    <div class="flex space-x-6 overflow-x-auto no-scrollbar w-full max-w-full mb-32 px-4 sm:px-0">
-      <!-- Testimoni 1 -->
-      <div
-        class="bg-[#C7E1FF] rounded-3xl p-6 min-w-[280px] sm:min-w-[360px] max-w-[550px] min-h-[360px] sm:max-w-[550px] flex-shrink-0">
-        <p class="text-[18px] sm:text-[20px] text-black mb-6 mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mattis dui sed fringilla.
-          Phasellus congue mollis ex in bibendum. Vestibulum tincidunt volutpat elit. Vivamus finibus tellus ac rutrum
-          malesuada. Donec sed sem semper, auctor mi non, ultrices ante.
-        </p>
-        <p class="font-bold text-[13px] leading-5 mb-1">Faizah</p>
-        <p class="text-[11px] text-[#6B7280]">25 April 2025</p>
-      </div>
-      <!-- Testimoni 2 -->
-      <div class="bg-[#C7E1FF] rounded-3xl p-6 min-w-[280px] sm:min-w-[360px] max-w-[550px] flex-shrink-0">
-        <p class="text-[18px] sm:text-[20px] text-black mb-6 mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mattis dui sed fringilla.
-          Phasellus congue mollis ex in bibendum. Vestibulum tincidunt volutpat elit. Vivamus finibus tellus ac rutrum
-          malesuada. Donec sed sem semper, auctor mi non, ultrices ante.
-        </p>
-        <p class="font-bold text-[13px] leading-5 mb-1">Faizah</p>
-        <p class="text-[11px] text-[#6B7280]">25 April 2025</p>
-      </div>
-      <!-- Testimoni 3 -->
-      <div class="bg-[#C7E1FF] rounded-3xl p-6 min-w-[280px] sm:min-w-[360px] max-w-[550px] flex-shrink-0">
-        <p class="text-[18px] sm:text-[20px] text-black mb-6 mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mattis dui sed fringilla.
-          Phasellus congue mollis ex in bibendum. Vestibulum tincidunt volutpat elit. Vivamus finibus tellus ac rutrum
-          malesuada. Donec sed sem semper, auctor mi non, ultrices ante.
-        </p>
-        <p class="font-bold text-[13px] leading-5 mb-1">Faizah</p>
-        <p class="text-[11px] text-[#6B7280]">25 April 2025</p>
-      </div>
-      <!-- Testimoni 4 -->
-      <div class="bg-[#C7E1FF] rounded-3xl p-6 min-w-[280px] sm:min-w-[360px] max-w-[550px] flex-shrink-0">
-        <p class="text-[18px] sm:text-[20px] text-black mb-6 mt-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mattis dui sed fringilla.
-          Phasellus congue mollis ex in bibendum. Vestibulum tincidunt volutpat elit. Vivamus finibus tellus ac rutrum
-          malesuada. Donec sed sem semper, auctor mi non, ultrices ante.
-        </p>
-        <p class="font-bold text-[13px] leading-5 mb-1">Faizah</p>
-        <p class="text-[11px] text-[#6B7280]">25 April 2025</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- section 5 -->
-  <section
-    class="relative max-w-full mx-auto w-full bg-[url('image/bg.jpg')] bg-repeat h-screen rounded-md p-8 text-center">
-    <h2 id="exo" class="text-[#0D6EFD] font-extrabold text-[40px] sm:text-[56px] mb-8 mt-10">SIGAP Menurut Mereka</h2>
-    <div class="flex items-center justify-center space-x-6 sm:space-x-12 flex-col sm:flex-row">
-      <button aria-label="Previous" id="prevBtn"
-        class="text-[#0F487F] border border-[#0F487F] rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center hover:bg-[#0D6EFD] hover:text-white transition shrink-0 mb-6 sm:mb-0">
+  
+    <div class="relative flex items-center justify-center w-full px-4 py-10">
+      <!-- Tombol Prev, tampilkan hanya di desktop -->
+      <button id="prev"
+        class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-[#1a3a66] text-[#1a3a66] text-xl sm:text-2xl hover:bg-[#dbe9ff] transition shrink-0 absolute left-4 hidden md:flex">
         <i class="fas fa-chevron-left"></i>
       </button>
-      <div class="max-w-[280px] sm:max-w-none text-center">
-        <img alt="Gray circle placeholder representing user profile image"
-          class="mx-auto rounded-full mt-14 mb-4 w-24 h-24 sm:w-20 sm:h-20 object-cover" height="80"
-          src="https://placehold.co/80x80/cccccc/999999?text=User+Image" width="80" id="userImage" />
-        <p class="font-semibold text-[22px] sm:text-[28px] text-black" id="userName">Nama Pengguna 1</p>
-        <p class="text-gray-400 mb-6 mt-2 text-[18px] sm:text-[20px]" id="userJob">Job, usia</p>
-        <p class="text-black max-w-md mx-auto mt-14 text-[16px] sm:text-[18px]" id="userDesc">
-          Praesent condimentum vehicula pulvinar. Suspendisse eu quam eget diam
-          tincidunt fringilla. Donec vel faucibus urna. Aenean facilisis dictum
-          justo at suscipit.
-        </p>
+  
+      <!-- Container Card -->
+      <div id="card-container" class="flex overflow-x-auto max-w-5xl mx-auto gap-4 px-4">
+        <div id="card-wrapper" class="flex gap-6 transition-transform duration-500">
+          <!-- Testimoni 1 -->
+          <div class="bg-[#cce2ff] rounded-xl p-6 sm:p-8 max-w-xs text-center flex-shrink-0 w-full sm:w-[280px] md:w-[300px]">
+            <h3 class="font-semibold text-base sm:text-lg mb-1">Nama Pengguna 1</h3>
+            <p class="text-[#a3a3a3] font-semibold mb-6 text-sm sm:text-base">Job, Usia</p>
+            <p class="text-black leading-relaxed text-sm sm:text-base">Praesent condimentum vehicula pulvinar. Suspendisse eu quam eget diam tincidunt fringilla...</p>
+          </div>
+  
+          <!-- Testimoni 2 -->
+          <div class="bg-[#cce2ff] rounded-xl p-6 sm:p-8 max-w-xs text-center flex-shrink-0 w-full sm:w-[280px] md:w-[300px]">
+            <h3 class="font-semibold text-base sm:text-lg mb-1">Nama Pengguna 2</h3>
+            <p class="text-[#a3a3a3] font-semibold mb-6 text-sm sm:text-base">Job, Usia</p>
+            <p class="text-black leading-relaxed text-sm sm:text-base">Praesent condimentum vehicula pulvinar. Suspendisse eu quam eget diam tincidunt fringilla...</p>
+          </div>
+  
+          <!-- Testimoni 3 -->
+          <div class="bg-[#cce2ff] rounded-xl p-6 sm:p-8 max-w-xs text-center flex-shrink-0 w-full sm:w-[280px] md:w-[300px]">
+            <h3 class="font-semibold text-base sm:text-lg mb-1">Nama Pengguna 3</h3>
+            <p class="text-[#a3a3a3] font-semibold mb-6 text-sm sm:text-base">Job, Usia</p>
+            <p class="text-black leading-relaxed text-sm sm:text-base">Praesent condimentum vehicula pulvinar. Suspendisse eu quam eget diam tincidunt fringilla...</p>
+          </div>
+  
+          <!-- Testimoni 4 -->
+          <div class="bg-[#cce2ff] rounded-xl p-6 sm:p-8 max-w-xs text-center flex-shrink-0 w-full sm:w-[280px] md:w-[300px]">
+            <h3 class="font-semibold text-base sm:text-lg mb-1">Nama Pengguna 4</h3>
+            <p class="text-[#a3a3a3] font-semibold mb-6 text-sm sm:text-base">Job, Usia</p>
+            <p class="text-black leading-relaxed text-sm sm:text-base">Praesent condimentum vehicula pulvinar. Suspendisse eu quam eget diam tincidunt fringilla...</p>
+          </div>
+  
+          <!-- Tambah lagi testimoni kalau mau -->
+        </div>
       </div>
-      <button aria-label="Next" id="nextBtn"
-        class="text-[#0F487F] border border-[#0F487F] rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center hover:bg-[#0D6EFD] hover:text-white transition shrink-0 mb-6 sm:mb-0">
+  
+      <!-- Tombol Next, tampilkan hanya di desktop -->
+      <button id="next"
+        class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-[#1a3a66] text-[#1a3a66] text-xl sm:text-2xl hover:bg-[#dbe9ff] transition shrink-0 absolute right-4 hidden md:flex">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
   </section>
-
-  <!-- section 6 -->
-  <section class="max-w-full mx-auto p-6 mt-60" id="faq">
-    <h1 class="text-center text-[#1E90FF] font-extrabold text-[40px] sm:text-[56px] mb-16 sm:mb-20">
+  
+  <!-- section 5 -->
+  <section class="max-w-full mx-auto p-6 mt-40 mb-40" id="faq">
+    <h1 id="exo" class="text-center text-[#1E90FF] font-extrabold text-[40px] sm:text-[56px] mb-16 sm:mb-20">
       Informasi Umum Pengguna SIGAP
     </h1>
 
@@ -360,130 +341,45 @@
 
   <!-- footer -->
   <footer class="bg-black text-white font-sans">
-    <div class="w-full py-8 flex flex-col items-center">
-      <img src="image/Logoo.png" alt="" class="w-[200px] h-[100px]">
-      <!-- Contact Information Section -->
-      <div
-        class="w-full max-w-4xl flex flex-col sm:flex-row justify-center px-6 sm:px-0 mb-12 space-y-6 sm:space-y-0 sm:space-x-12">
+    <div class="w-full py-10 flex flex-col items-center">
+      <!-- Logo -->
+      <img src="image/Logoo.png" alt="Logo SIGAP" class="w-[150px] sm:w-[200px] h-auto mb-10 sm:mb-16">
+  
+      <!-- Contact Information -->
+      <div class="w-full max-w-6xl flex flex-col sm:flex-row justify-center items-center sm:items-start gap-8 sm:gap-16 px-6 sm:px-0 mb-12">
         <!-- Address -->
-        <div class="flex items-center space-x-2 justify-center">
-          <i class="fas fa-map-marker-alt text-white text-lg sm:text-xl"></i>
-          <span class="text-white text-sm sm:text-base font-normal">Bogor, Indonesia</span>
+        <div class="flex items-center gap-4">
+          <img src="image/maps.png" alt="Maps" class="w-8 h-8 object-contain">
+          <span class="text-white text-[18px] sm:text-[22px] font-semibold text-center sm:text-left">Bogor, Indonesia</span>
         </div>
-
+        
         <!-- Email -->
-        <div class="flex items-center space-x-2 justify-center">
-          <i class="fas fa-envelope text-white text-lg sm:text-xl"></i>
-          <span class="text-white text-sm sm:text-base font-normal">Sigap@gmail.com</span>
+        <div class="flex items-center gap-4">
+          <img src="image/email (2).png" alt="Email" class="w-8 h-8 object-contain">
+          <span class="text-white text-[18px] sm:text-[22px] font-semibold text-center sm:text-left">Sigap@gmail.com</span>
         </div>
-
+        
         <!-- Instagram -->
-        <div class="flex items-center space-x-2 justify-center">
-          <i class="fab fa-instagram text-white text-lg sm:text-xl"></i>
-          <span class="text-white text-sm sm:text-base font-normal">sigapin</span>
+        <div class="flex items-center gap-4">
+          <img src="image/ig.png" alt="Instagram" class="w-8 h-8 object-contain">
+          <span class="text-white text-[18px] sm:text-[22px] font-semibold text-center sm:text-left">sigapin</span>
         </div>
       </div>
-
-      <!-- Copyright Section -->
-      <p class="text-xs sm:text-sm text-white font-normal">© 2025 SIGAP. All rights reserved</p>
+  
+      <!-- Copyright -->
+      <p class="text-[16px] sm:text-[20px] text-white font-semibold text-center mt-6">© 2025 SIGAP. All rights reserved</p>
     </div>
   </footer>
-  S
-  <!-- JS Toggle Script sec 1 -->
-  <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+  
+<!-- nav -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
-
-  <!-- js sec 6 -->
-  <script>
-    const users = [
-      {
-        name: "Nama Pengguna 1",
-        job: "Job, usia",
-        desc:
-          "Praesent condimentum vehicula pulvinar. Suspendisse eu quam eget diam tincidunt fringilla. Donec vel faucibus urna. Aenean facilisis dictum justo at suscipit.",
-        img: "https://placehold.co/80x80/cccccc/999999?text=User+Image",
-      },
-      {
-        name: "Nama Pengguna 2",
-        job: "Pekerjaan, umur",
-        desc:
-          "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-        img: "https://placehold.co/80x80/999999/666666?text=User+2",
-      },
-      {
-        name: "Nama Pengguna 3",
-        job: "Profesi, usia",
-        desc:
-          "Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.",
-        img: "https://placehold.co/80x80/bbbbbb/888888?text=User+3",
-      },
-    ];
-
-    let currentIndex = 0;
-
-    const userName = document.getElementById("userName");
-    const userJob = document.getElementById("userJob");
-    const userDesc = document.getElementById("userDesc");
-    const userImage = document.getElementById("userImage");
-
-    function updateUser(index) {
-      const user = users[index];
-      userName.textContent = user.name;
-      userJob.textContent = user.job;
-      userDesc.textContent = user.desc;
-      userImage.src = user.img;
-      userImage.alt = `Profile image of ${user.name}`;
-    }
-
-    document.getElementById("prevBtn").addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + users.length) % users.length;
-      updateUser(currentIndex);
-    });
-
-    document.getElementById("nextBtn").addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % users.length;
-      updateUser(currentIndex);
-    });
-
-    // Initialize first user
-    updateUser(currentIndex);
-  </script>
-
-  <!-- Script sec 7 -->
-  <script>
-    function toggleFaq(index) {
-      const content = document.getElementById(`content${index}`);
-      const icon = document.getElementById(`icon${index}`);
-      const title = document.getElementById(`title${index}`);
-
-      const isVisible = !content.classList.contains('hidden');
-
-      // Tutup semua konten terlebih dahulu (jika hanya ingin satu buka dalam satu waktu, bisa dipakai)
-      // for (let i = 1; i <= 4; i++) {
-      //   document.getElementById(`content${i}`).classList.add('hidden');
-      //   document.getElementById(`icon${i}`).classList.replace('fa-chevron-up', 'fa-chevron-down');
-      //   document.getElementById(`title${i}`).classList.replace('text-[#1E90FF]', 'text-black');
-      // }
-
-      // Toggle konten ini
-      if (isVisible) {
-        content.classList.add('hidden');
-        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-        title.classList.replace('text-[#1E90FF]', 'text-black');
-      } else {
-        content.classList.remove('hidden');
-        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-        title.classList.replace('text-black', 'text-[#1E90FF]');
-      }
-    }
-  </script>
-
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>  
   <script>
     AOS.init({
       startEvent: 'DOMContentLoaded',
@@ -492,6 +388,54 @@
       mirror: true,
     });
   </script>
-</body>
+  <!-- sec 4 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const prevBtn = document.getElementById('prev');
+      const nextBtn = document.getElementById('next');
+      const cardWrapper = document.getElementById('card-wrapper');
+  
+      let currentIndex = 0;
+      const cardWidth = 320; // lebar 1 card termasuk margin
+      const totalCards = cardWrapper.children.length;
+  
+      function updateSlide() {
+        cardWrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+      }
+  
+      prevBtn.addEventListener('click', () => {
+        if (currentIndex === 0) {
+          currentIndex = totalCards - 1; // lompat ke kartu terakhir
+        } else {
+          currentIndex--;
+        }
+        updateSlide();
+      });
+  
+      nextBtn.addEventListener('click', () => {
+        if (currentIndex === totalCards - 1) {
+          currentIndex = 0; // balik ke kartu pertama
+        } else {
+          currentIndex++;
+        }
+        updateSlide();
+      });
+    });
+  </script>  
 
+  <!-- sec 5 -->
+  <script>
+    function toggleFaq(id) {
+      const content = document.getElementById(`content${id}`);
+      const icon = document.getElementById(`icon${id}`);
+      
+      // Toggle tampilkan/sembunyikan konten
+      content.classList.toggle('hidden');
+      
+      // Rotate icon saat expand/collapse
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+  
+</body>
 </html>
